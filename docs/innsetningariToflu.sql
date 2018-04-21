@@ -13,8 +13,14 @@ VALUES
 ('3','Blúss','3','3'),
 ('4','Rapp','4','4'),
 ('5','raftonlist','5','5')
-*/
-insert into lagalisti(nafn, ID, texti, utgafudagur, flytjandiID, tegundID, utgafaID)
+
+insert into utgefandi(ID, nafn, stefna, copyright, stadsetning)
+values
+('1','Flæði','Heitir flæði útgáfufyrirtæki. Flæði sérhæfir sig í rapp og popp tónlist, og eltir hvað fólk finnst skemmtileg tónlist að hverju sinni og aðlagar sig neytandanum. Flæði','FLDI', 'Lagmuli 9'),
+('2','heimsyn','Heimsyn er utgafufyrirtæki sem sérhæfir sig í rappi og poppi.','hmsn','kaplaskjolsvegur 34')
+
+
+INSERT INTO lagalisti(nafn, ID, texti, utgafudagur, flytjandiID, tegundID, utgafaID)
 VALUES
 ('Mark my words', '1', '
 Mark my words, thats all that I have
@@ -832,8 +838,8 @@ I mean, you boys not even coming close
 I gave niggas like you a reason for celebration
 You number one and Im Eddie Murphy, we tradin places
 Look in the mirror, Im closer than I really appear','29.april.2016','4','4','2'),
-('Redemption','35','Why would I say all these things to have you feelin' a way?
-Why would I tell you I'm 30 away if I'm not on the way?
+('Redemption','35','Why would I say all these things to have you feelin a way?
+Why would I tell you Im 30 away if Im not on the way?
 Why do I settle for women that force me to pick up the pieces?
 Why do I want an independent woman
 To feel like she needs me?—I lost my way
@@ -841,17 +847,17 @@ To feel like she needs me?—I lost my way
 [Chorus]
 Im searchin for these words to say to you
 Please give me time
-Cause Im searchin' for these words to say to you
+Cause Im searchin for these words to say to you
 Oh, please give me time
 Cause Im searchin for these words to say to you right now
 Redemptions on your mind when you think about me, yeah
 Redemption on your mind when you think about me, yeah','29.april.2016','4','4','2'),
-('With you','36','It's about us right now, girl, where you going?
-It's about us right now, girl, where you going?
-I'm with you
+('With you','36','Its about us right now, girl, where you going?
+Its about us right now, girl, where you going?
+Im with you
 
 [Verse 1: PARTYNEXTDOOR]
-Yeah, I can't get enough of you, babe
+Yeah, I cant get enough of you, babe
 Bottles open up so you can try and open up for me, baby
 M.I.A. in the M.I.A
 You do you, girl, the haters gon hate
@@ -872,10 +878,10 @@ This aint no motherfucking ninety-one
 We out here rapping for money, you niggas rapping for fun
 I dont fuck with nobody in this shit but Bun
 (In this shit but Bun)','29.april.2016','4','4','2'),
-('Still here','38','Me and all my niggas doin' well, doin' well, dog
+('Still here','38','Me and all my niggas doin well, doin well, dog
 You not from the city, I could tell, I could tell, dog
 Did it, did it, did it by myself, by myself, dog
-Blew up and I'm in the city still, I'm still here, dog
+Blew up and Im in the city still, Im still here, dog
 
 [Verse 1]
 How did I finesse all of this shit from Jane and Weston?
@@ -933,16 +939,366 @@ I need a one dance
 Got a Hennessy in my hand
 One more time fore I go
 Higher powers taking a hold on me','29.april.2016','4','4','2'),
-('Ready for it','41','','10.November.2017','5','5','1'),
-('End game','42','','10.November.2017','5','5','1'),
-('I did something bad','43','','10.November.2017','5','5','1'),
-('Dont blame me','44','','10.November.2017','5','5','1'),
-('Delicate','45','','10.November.2017','5','5','1'),
-('Look what you made me do','46','','10.November.2017','5','5','1'),
-('So it goes..','47','','10.November.2017','5','5','1'),
-('Goergeous','48','','10.November.2017','5','5','1'),
-('Getaway car','49','','10.November.2017','5','5','1'),
-('King of my heart','50','','10.November.2017','5','5','1')
+('Ready for it','41','Knew he was a killer first time that I saw him
+Wondered how many girls he had loved and left haunted
+But if hes a ghost, then I can be a phantom
+Holdin him for ransom, some
+Some boys are tryin too hard, he dont try at all though
+Younger than my exes, but he act like such a man, so
+I see nothing better, I keep him forever
+Like a vendetta-ta
+
+[Pre-Chorus]
+I, I, I see how this is gon go
+Touch me and youll never be alone
+I-Island breeze and lights down low
+No one has to know
+
+[Chorus]
+In the middle of the night, in my dreams
+You should see the things we do, baby
+In the middle of the night, in my dreams
+I know Im gonna be with you
+So I take my time
+Are you ready for it?','10.November.2017','5','5','1'),
+('End game','42','I wanna be your endgame
+I wanna be your first string
+I wanna be your A-Team (whoa, whoa, whoa)
+I wanna be your endgame, endgame
+
+[Post-Chorus: Taylor Swift & Future]
+Big reputation, big reputation
+Ooh, you and me, we got big reputations, ah
+And you heard about me, ooh
+I got some big enemies (yeah)
+Big reputation, big reputation
+Ooh, you and me would be a big conversation, ah (git, git)
+And I heard about you, ooh (yeah)
+You like the bad ones, too
+
+[Verse 1: Future]
+You so dope, dont overdose
+Im so stoked, I need a toast
+We do the most, Im in the Ghost like Im whippin a boat
+I got a reputation, girl that dont precede me (yeah)
+Im one call away whenever you need me (yeah)
+Im in a G5 (yeah), come to the A-Side (yeah)
+I got a bad boy persona, thats what they like (what they like)
+You love it, I love it, too cause you my type (you my type)
+You hold me down, and I protect you with my life','10.November.2017','5','5','1'),
+('I did something bad','43','I never trust a narcissist, but they love me
+So I play em like a violin
+And I make it look oh-so-easy
+Cause for every lie I tell them, they tell me three
+This is how the world works
+Now all he thinks about is me
+
+[Pre-Chorus 1]
+I can feel the flames on my skin
+Crimson red paint on my lips
+If a man talks shit, then I owe him nothing
+I dont regret it one bit, cause he had it coming
+
+[Chorus]
+They say I did something bad
+Then whys it feel so good?
+They say I did something bad
+But whys it feel so good?
+Most fun I ever had
+And Id do it over and over and over again if I could
+It just felt so good, good','10.November.2017','5','5','1'),
+('Dont blame me','44','Dont blame me, love made me crazy
+If it doesnt, you aint doin it right
+Lord, save me, my drug is my baby
+Ill be usin for the rest of my life
+
+[Verse 1]
+Ive been breakin hearts a long time
+And toyin with them older guys
+Just playthings for me to use
+Something happened for the first time
+In the darkest little paradise
+Shakin, pacin, I just need you
+
+[Pre-Chorus]
+For you, I would cross the line
+I would waste my time
+I would lose my mind
+They say, Shes gone too far this time
+
+[Chorus]
+Dont blame me, love made me crazy
+If it doesnt, you aint doin it right
+Lord, save me, my drug is my baby
+Ill be usin for the rest of my life
+Dont blame me, love made me crazy
+If it doesnt, you aint doin it right
+Oh, Lord, save me, my drug is my baby
+Ill be usin for the rest of my life
+','10.November.2017','5','5','1'),
+('Delicate','45','This aint for the best
+My reputations never been worse, so
+You must like me for me…
+We cant make
+Any promises now, can we, babe?
+But you can make me a drink
+
+[Verse 1]
+Dive bar on the East Side, where you at?
+Phone lights up my nightstand in the black
+Come here, you can meet me in the back
+Dark jeans and your Nikes, look at you
+Oh damn, never seen that color blue
+Just think of the fun things we could do
+Cause I like you
+
+[Pre-Chorus]
+This aint for the best
+My reputations never been worse, so
+You must like me for me…
+Yeah, I want you
+We cant make
+Any promises now, can we, babe?
+But you can make me a drink','10.November.2017','5','5','1'),
+('Look what you made me do','46','I dont like your little games
+Dont like your tilted stage
+The role you made me play
+Of the fool, no, I dont like you
+I dont like your perfect crime
+How you laugh when you lie
+You said the gun was mine
+Isnt cool, no, I dont like you (oh)
+
+[Pre-Chorus]
+But I got smarter, I got harder in the nick of time
+Honey, I rose up from the dead, I do it all the time
+Ive got a list of names and yours is in red, underlined
+I check it once, then I check it twice, oh!
+
+[Chorus]
+Ooh, look what you made me do
+Look what you made me do
+Look what you just made me do
+Look what you just made me—
+Ooh, look what you made me do
+Look what you made me do
+Look what you just made me do
+Look what you just made me do
+','10.November.2017','5','5','1'),
+('So it goes..','47','See you in the dark
+All eyes on you, my magician
+All eyes on us
+You make everyone disappear, and
+Cut me into pieces
+Gold cage, hostage to my feelings
+Back against the wall
+Trippin, trip-trippin when youre gone
+
+[Pre-Chorus]
+Cause we break down a little
+But when you get me alone, its so simple
+Cause baby, I know what you know
+We can feel it
+
+[Chorus]
+And all our pieces fall
+Right into place
+Get caught up in a moment
+Lipstick on your face
+So it goes…
+Im yours to keep
+And Im yours to lose
+You know Im not a bad girl, but I
+Do bad things with you
+So it goes…
+
+[Verse 2]
+Met you in a bar
+All eyes on me, your illusionist
+All eyes on us
+I make all your grey days clear
+And wear you like a necklace
+Im so chill, but you make me jealous
+But I got your heart
+Skippin, skip-skippin when Im gone','10.November.2017','5','5','1'),
+('Goergeous','48','You should take it as a compliment
+That I got drunk and made fun of the way you talk
+You should think about the consequence
+Of your magnetic field being a little too strong
+And I got a boyfriend, hes older than us
+Hes in the club doing I dont know what
+Youre so cool, it makes me hate you so much
+(I hate you so much)
+
+[Pre-Chorus 1]
+Whiskey on ice, Sunset and Vine
+Youve ruined my life by not being mine
+
+[Chorus]
+Youre so gorgeous
+I cant say anything to your face
+Cause look at your face
+And Im so furious
+At you for making me feel this way
+But what can I say?
+Youre gorgeous
+
+[Verse 2]
+You should take it as a compliment
+That Im talking to everyone here but you
+And you should think about the consequence
+Of you touching my hand in a darkened room
+If youve got a girlfriend, Im jealous of her
+But if youre single thats honestly worse
+Cause youre so gorgeous it actually hurts
+(Honey, it hurts)','10.November.2017','5','5','1'),
+('Getaway car','49','[Intro]
+No, nothing good starts in a getaway car
+
+[Verse 1]
+It was the best of times, the worst of crimes
+I struck a match and blew your mind
+But I didt mean it
+And you didnt see it
+The ties were black, the lies were white
+In shades of gray in candlelight
+I wanted to leave him
+I needed a reason
+
+[Pre-Chorus]
+X marks the spot where we fell apart
+He poisoned the well, I was lyin to myself
+I knew it from the first Old Fashioned, we were cursed
+We never had a shotgun shot in the dark
+(Oh!)
+
+[Chorus]
+You were drivin the getaway car
+We were flyin, but we never get far
+Dont pretend its such a mystery
+Think about the place where you first met me
+Ridin in a getaway car
+There were sirens in the beat of your heart
+I shoulda known Id be the first to leave
+Think about the place where you first met me
+In a getaway car, oh-oh-oh
+No, they never get far, oh-oh-ahh
+No, nothing good starts in a getaway car
+
+[Verse 2]
+It was the great escape, the prison break
+The light of freedom on my face
+But you werent thinkin
+And I was just drinkin
+Well, he was runnin after us, I was screamin, Go, go, go!
+But with three of us, honey, its a sideshow','10.November.2017','5','5','1'),
+('King of my heart','50','Im perfectly fine, I live on my own
+I made up my mind, Im better off bein alone
+We met a few weeks ago
+Now you try on callin me baby, like tryin on clothes
+
+[Pre-Chorus]
+Salute to me, Im your American Queen
+And you move to me like Im a Motown beat
+And we rule the kingdom inside my room
+Cause all the boys and their expensive cars
+With their Range Rovers and their Jaguars
+Never took me quite where you do
+
+[Chorus]
+And all at once, you are the one I have been waiting for
+King of my heart, body, and soul, ooh whoa
+And all at once, youre all I want, Ill never let you go
+King of my heart, body, and soul, ooh whoa
+
+[Post-Chorus]
+And all at once, Ive been waiting, waiting
+Ooh whoa, ooh whoa
+And all at once, you are the one, I have been waiting, waiting
+Body and soul, ooh whoa
+And all at once
+
+[Verse 2]
+Late in the night, the citys asleep
+Your love is a secret Im hoping, dreaming, dying to keep
+Change my priorities
+The taste of your lips is my idea of luxury','10.November.2017','5','5','1')
+
+insert into askrifandi(ID, nafn, email, heimili)
+VALUES
+('1','Konráð mikael','konrad@gmail.com', 'Fellsmuli'),
+('2','Jónas brynjar','jonas@gmail.com', 'laugavegur'),
+('3','Alfreð siggi','alfred@gmail.com', 'skipasund'),
+('4','Björt bína','bjort@gmail.com', 'hverfisgata'),
+('5','Kleoatra egillsdottir','kleopatra@gmail.com', 'breiðholtsvegur')
+
+insert into lagaval(askrifandiID, flytjandiID, lagID, dagsetning)
+VALUES
+('1','1','2','10 7 2017'),
+('1','1','4','9 7 2017'),
+('1','1','6','5.7.2017'),
+('1','2','14','10.3.2017'),
+('1','3','24','3.3.2017'),
+('1','4','35','23.7.2014'),
+('1','5','46','4.2.2013'),
+('1','1','7','2.3.2018'),
+('1','1','2','10.7.2017'),
+('1','1','3','10.7.2017'),
+('2','2','13','10.7.2017'),
+('2','1','9','10.7.2017'),
+('2','4','37','4.2.2011'),
+('2','2','13','30.3.2013'),
+('2','3','33','1.7.2014'),
+('2','1','3','26.2.2015'),
+('2','1','2','6.1.2013'),
+('2','1','6','4.4.2012'),
+('2','5','47','23.5.2012'),
+('2','5','40','25.6.2013'),
+('3','5','48','23.8.2018'),
+('3','4','32','23.12.2014'),
+('3','4','31','30.11.2000'),
+('3','4','38','12.4.2012'),
+('3','3','23','11.2.2011'),
+('3','3','26','15.1.2014'),
+('3','2','19','17.6.2016'),
+('3','1','8','25.8.2016'),
+('3','5','42','25.5.2007'),
+('3','2','17','25.9.2014'),
+('4','4','38','25.5.2013'),
+('4','2','12','10.7.2012'),
+('4','5','43','10.7.2011'),
+('4','1','9','10.5.2016'),
+('4','1','6','10.3.2015'),
+('4','2','17','10.2.2018'),
+('4','2','14','10.2.2014'),
+('4','2','12','10.1.2013'),
+('4','3','29','10.2.2012'),
+('4','4','35','10.5.2015'),
+('5','5','47','10.4.2017'),
+('5','3','21','10.3.2014'),
+('5','4','36','10.3.2013'),
+('5','1','1','10.3.2013'),
+('5','1','6','17.4.2012'),
+('5','2','17','10.6.2015'),
+('5','3','25','3.6.2016'),
+('5','5','41','25.3.2015'),
+('5','4','36','10.2.2015'),
+('5','2','23','10.8.2017')
+*/
+insert into midasala(fjolidMida, stadur, flytjandiID, dagsetning)
+values
+('300','Grensás', '4','10.5.2017'),
+('2000','Hard rock', '4','10.5.2017'),
+('254','Laugavegur', '4','10.5.2017'),
+('14','Bonus', '4','15.5.2017'),
+('32','Kronan', '4','12.5.2017'),
+('21','Austur', '4','15.4.2017'),
+('351','midi.is', '4','18.4.2017'),
+('465','Hlemmur', '4','11.4.2017'),
+('214','Laugarvegur', '4','10.5.2017'),
+('25','Laugardalshöll', '4','10.5.2017'),
 
 
-nafn, ID, texti, utgafudagur, flytjandiID, tegundID, utgafaID
+
+
+

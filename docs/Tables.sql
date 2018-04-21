@@ -38,10 +38,13 @@ email varchar(40),
 heimili varchar(70)
 );
 create table lagaval(
+askrifandiID int,
+flytjandiID int,
+lagID int,
 foreign key(askrifandiID)references askrifandi(ID),
 foreign key(flytjandiID)references flytjandi(ID),
 foreign key(lagID)references lagalisti(ID),
-dagsetning int
+dagsetning varchar(200)
 );
 create table tonleikar(
 ID int primary key,
@@ -53,11 +56,11 @@ fjoldiMida int,
 foreign key(fjoldiMida) references midasala(fjolidMida),
 askrifendurID int,
 foreign key(askrifendurID) references askrifandi(ID),
-dagskra int
+dagskra varchar(200)
 );
 create table midasala(
 fjolidMida int primary key,
 stadur varchar(60),
 foreign key(flytjandi) references flytjandi(ID),
-dagsetning int
+dagsetning varchar(200)
 );
