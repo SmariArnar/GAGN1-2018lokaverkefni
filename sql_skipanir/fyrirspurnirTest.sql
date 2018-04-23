@@ -85,6 +85,25 @@
 #limit 50;
 #15.Sýndu fjöldra seldra miða á tónleika eins flytjandans.
 #Hér eru fjöldi miða sem eru seldir á tónleika Drake.
-select fjoldiMida as 'Fjöldi miða seldir',  nafnFlytjanda as 'Á tónleikana hans',flytjandiID as '...', flytjendurTonleikarID as '...'
-from tonleikar, flytjandi
-having flytjendurTonleikarID = 4 and flytjandiID = flytjendurTonleikarID;
+#select fjoldiMida as 'Fjöldi miða seldir',  nafnFlytjanda as 'Á tónleikana hans',flytjandiID as '...', flytjendurTonleikarID as '...'
+#from tonleikar, flytjandi
+#having flytjendurTonleikarID = 4 and flytjandiID = flytjendurTonleikarID;
+#Mínar fyrirspurnir
+#16. Miðasala á fyrir tónleika Rihönnu.
+#select fjoldiMidasala as 'Fjöldi seldra miða á tónleika Rihönna.', flytjandiSalaID as '...', flytjendurTonleikarID as '...'
+#from midasala, tonleikar
+#where flytjandiSalaID = 2 and flytjendurTonleikarID = 2;
+#17. Birta nöfn þeirra flytjanda sem eru hjá heimssýn.
+#select nafnFlytjanda,nafnUtgefanda,utgefandiID as'..', utgefandilagID as '...', flytjandiID as '...', flytjandilagID as '...'
+#from flytjandi, lagalisti, utgefandi
+#where utgefandiID = 2 and utgefandilagID = 2 and flytjandiID = flytjandilagID;
+#18.Sýna nöfn flytjanda sem hafa k í nafni lagi sínu.
+#select nafnFlytjanda as 'Nöfn flytjanda þeirra', nafnLags as 'Lög með k í þeim', flytjandilagID as '...', flytjandiID as '...'
+#from flytjandi, lagalisti
+#where flytjandilagID = flytjandiID and nafnlags like '%k%';
+#19. Sýna lög yngsta flytjandans
+select nafnFLytjanda, nafnLags, flytjandiID, flytjandilagID, min(aldur)
+from flytjandi, lagalisti
+where flytjandiID = flytjandilagID
+group by aldur
+HAVING min(aldur);
