@@ -75,15 +75,16 @@
 #select avg(length(texti)) as 'Meðalengd texta'
 #from lagalisti;
 #14.Sýndu hversu margir flytjendur eiga fleiri en 4 lög.
-select lagalisti.*, flytjandi.*, 
-from lagalisti, flytjandi
+#Hér eru allir artistar með jafnmörg lög á sínum lagalista og allir með fleiri en 4 lög
+#select count(flytjandilagID) as 'Fjöldi laga listamanns', nafnFlytjanda as 'Nafn listamanns',flytjandilagID as '...', flytjandiID as '...'
+#from lagalisti, flytjandi
 #where flytjandilagID = flytjandiID
-where count(lflytjandilagID) = 1;
-/*
-group by nafnFlytjanda, flytjandiID
-Having count(Distinct lagID) > 4 and flytjandilagID = flytjandiID; 
-
-select c.* from customers c, orders o, order_details od 
-where c.customer_id = o.customer_id 
-    and o.order_id = od.order_id 
-    group by od.order_id having count(od.item_id) > 1;
+#group by flytjandilagID
+#having count(flytjandilagID) > 4
+#order by count(*) DESC
+#limit 50;
+#15.Sýndu fjöldra seldra miða á tónleika eins flytjandans.
+#Hér eru fjöldi miða sem eru seldir á tónleika Drake.
+select fjoldiMida as 'Fjöldi miða seldir',  nafnFlytjanda as 'Á tónleikana hans',flytjandiID as '...', flytjendurTonleikarID as '...'
+from tonleikar, flytjandi
+having flytjendurTonleikarID = 4 and flytjandiID = flytjendurTonleikarID;
