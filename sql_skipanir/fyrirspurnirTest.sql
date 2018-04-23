@@ -101,9 +101,8 @@
 #select nafnFlytjanda as 'Nöfn flytjanda þeirra', nafnLags as 'Lög með k í þeim', flytjandilagID as '...', flytjandiID as '...'
 #from flytjandi, lagalisti
 #where flytjandilagID = flytjandiID and nafnlags like '%k%';
-#19. Sýna lög yngsta flytjandans
-select nafnFLytjanda, nafnLags, flytjandiID, flytjandilagID, min(aldur)
-from flytjandi, lagalisti
-where flytjandiID = flytjandilagID
-group by aldur
-HAVING min(aldur);
+#19.Sýnið öll nöfn og flytjendur blúss laga
+#select nafnFlytjanda as 'Nafn flytjanda blúss',nafnLags  as 'nafn blúss lags', tegund as 'Tónlistartegund', tegundlagID as '...', tegundID as '...', flytjandiID as '...', flytjandilagID as '...'
+#from lagalisti, tegund, flytjandi
+#where tegundID = 3 and tegundlagID = 3 and flytjandiID = flytjandilagID;
+#20.Sýnið staðsetningu útgefanda og staðsetningu tónleika.
