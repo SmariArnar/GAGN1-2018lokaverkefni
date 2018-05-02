@@ -105,4 +105,7 @@
 #select nafnFlytjanda as 'Nafn flytjanda blúss',nafnLags  as 'nafn blúss lags', tegund as 'Tónlistartegund', tegundlagID as '...', tegundID as '...', flytjandiID as '...', flytjandilagID as '...'
 #from lagalisti, tegund, flytjandi
 #where tegundID = 3 and tegundlagID = 3 and flytjandiID = flytjandilagID;
-#20.Sýnið staðsetningu útgefanda og staðsetningu tónleika.
+#20.Sýnið hvar tónleikar allra listamannana verða fluttir.
+#select nafnFlytjanda as 'Tónleikaflytjandi', stadsetning as 'Staðsetning tónleika.',flytjendurTonleikarID as '....',flytjandiID as '...'
+#from tonleikar, flytjandi
+#having flytjendurTonleikarID = flytjandiID;
